@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мир пончиков</title>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Магазин пончиков</title>
     <style>
-       
-        body, html {
-            height: 100%;
-            margin: 0;
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff5f8; 
+            color: #4a4a4a;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            background-color: #ffffff;
-            font-family: serif;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container{
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
 
-        h1 {
-            color: red; 
-            margin-bottom: 20px;
-            font-size: 48px;
+        h1{
+            font-size: 2.5rem;
+            color: #ff69b4;
+            margin-botton: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-
         img {
-            max-width: 600px; 
-            width: 100%;
+            max-width: 100%;
             height: auto;
+            width: 300px; 
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-
-    <h1>Мир пончиков</h1>
-    <img src="/uploads/2023/02/donut.png" alt="Пончик">
+    <div class="container">
+        <h1>Мир пончиков</h1>
+        <img src="/uploads/2023/02/donut.png" alt="Свежий пончик">
+        <p>Самые уютные сладости в Калининграде</p>
+    </div>
 
 </body>
 </html>
